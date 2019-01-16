@@ -1,15 +1,18 @@
 $(document).ready(function() {
-    var menu = $(".menu"),
-        item1 = $(".link1"),
-        item3 = $(".link2"),
-        item3 = $(".link3"),
+    var line = $(".line"),
+        container1 = $(".container-1"),
+        container2 = $(".container-2"),
+        container = $(".container"),
         tl;
 
 
 
     tl = new TimelineLite();
 
-    tl.to(menu, .6, { width: 250, height: "100%", top: 0, bottom: 0, borderBottomLeftRadius: 0, borderTopLeftRadius: 0 })
+    tl.to(line, 1, { width: "100%" })
+        .to(line, 1, { rotation: "90" })
+        .to(container1, 1, { right: "100%" }, "containers")
+        .to(container2, 1, { left: "100%" }, "containers")
 
 
 
