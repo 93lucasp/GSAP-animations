@@ -8,7 +8,47 @@ body {
     min-height: 100vh;
     overflow: hidden;
 }
+.macchia {
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    animation-name: example1,example2;
+    animation-duration: 5s,3s;
+    animation-iteration-count: infinite,infinite;
+    animation-direction: alternate,alternate;
+    
+    
+}
+@keyframes example1 {
+    from {
+       
+        border-top-right-radius: 0%;
+        
+        border-bottom-left-radius: 0%;
 
+    }
+    to {
+       
+        border-top-right-radius: 5%;
+      
+        border-bottom-left-radius: 5%;
+    }
+  }
+  @keyframes example2 {
+    from {
+        border-top-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+
+    }
+    to {
+        border-top-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+  }
+.active {
+   border-radius: 50%;     
+}
 .container {
     background-color: #fff;
     position: relative;
