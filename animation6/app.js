@@ -1691,7 +1691,10 @@
         Kt = e.$;
     return w.noConflict = function(t) { return e.$ === w && (e.$ = Kt), t && e.jQuery === w && (e.jQuery = Jt), w }, t || (e.jQuery = e.$ = w), w
 });
+
 $(document).ready(function() {
+
+
     var title1 = $(".title-1"),
         title2 = $(".title-2"),
         title3 = $(".title-3"),
@@ -1773,9 +1776,9 @@ $(document).ready(function() {
         tl;
 
     tl = new TimelineLite();
-    // if ($(window).width() => 992) {
-    //     console.log("ciao")
-    // }
+    var windowD = $(window).width();
+
+
     tl.to(title1, 0.3, { opacity: 1, transform: "translateY(10px)" })
         .to(lineBottom1, 0.1, { width: "100%", ease: Power0.easeNone })
         .to(lineLeft1, 0.1, { height: "100%", ease: Power0.easeNone })
@@ -1854,6 +1857,8 @@ $(document).ready(function() {
         .to(lineTop15, 0.1, { width: "100%", ease: Power0.easeNone })
         .to(lineRight15, 0.1, { height: "100%", ease: Power0.easeNone })
         .to(img15, 0.1, { backgroundSize: "100%", ease: Power0.easeNone })
+
+
 
 
 

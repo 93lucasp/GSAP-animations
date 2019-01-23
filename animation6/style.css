@@ -42,6 +42,13 @@ body {
     word-break: break-all;
 }
 
+@media screen and (max-width: 992px) {
+    .item-text {
+        width: 58px;
+        height: 58px;
+    }
+}
+
 .item-img {
     width: 100px;
     height: 100px;
@@ -55,8 +62,8 @@ body {
 
 @media screen and (max-width: 992px) {
     .item-img {
-        width: 115px;
-        height: 115px;
+        width: 58px;
+        height: 58px;
     }
 }
 
