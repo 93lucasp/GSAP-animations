@@ -1694,39 +1694,31 @@
 $(document).ready(function() {
 
 
-    var line1 = $(".article1 .line"),
-        title1 = $(".article1 .article-title"),
-        date1 = $(".article1 .article-date"),
-        line2 = $(".article2 .line"),
-        title2 = $(".article2 .article-title"),
-        date2 = $(".article2 .article-date"),
-        line3 = $(".article3 .line"),
-        title3 = $(".article3 .article-title"),
-        line4 = $(".article4 .line"),
-        title4 = $(".article4 .article-title"),
-        line5 = $(".article5 .line"),
-        title5 = $(".article5 .article-title"),
-        line6 = $(".article6 .line"),
-        title6 = $(".article6 .article-title"),
-
+    var contactBox = $(".contact-box"),
+        contactTitle = $(".contact-title"),
+        contactText = $(".contact-text"),
+        contactPlace = $(".contact-place"),
+        contactEmail = $(".contact-email"),
+        contactSocial = $(".contact-social"),
+        contactInstagram = $(".contact-instagram"),
+        contactLinkedin = $(".contact-linkedin"),
+        contactGithub = $(".contact-github"),
         tl;
 
     tl = new TimelineLite();
 
-    tl.to(line1, 0.3, { width: "100%" })
-        .to(title1, 0.2, { transform: "translateY(0)", opacity: 1 }, "together1")
-        .to(date1, 0.2, { transform: "translateY(0)", opacity: 1 }, "together1")
-        .to(line2, 0.3, { width: "100%" })
-        .to(title2, 0.2, { transform: "translateY(0)", opacity: 1 }, "together2")
-        .to(date2, 0.2, { transform: "translateY(0)", opacity: 1 }, "together2")
-        .to(line3, 0.3, { width: "100%" })
-        .to(title3, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line4, 0.3, { width: "100%" })
-        .to(title4, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line5, 0.3, { width: "100%" })
-        .to(title5, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line6, 0.3, { width: "100%" })
-        .to(title6, 0.2, { transform: "translateY(0)", opacity: 1 })
+    tl.to(contactBox, 1, { right: 0, opacity: .9 })
+        .to(contactTitle, .5, { transform: "translateX(0)", opacity: 1 }, "-=0.2")
+        .to(contactText, .5, { transform: "translateX(0)", opacity: 1 })
+        .to(contactPlace, .5, { transform: "translateX(0)", opacity: 1 })
+        .to(contactEmail, .5, { transform: "translateX(0)", opacity: 1 })
+        .to(contactSocial, .6, { transform: "rotate(90deg)", opacity: 1 }, "-=0.5")
+        .to(contactInstagram, .4, { transform: "translateY(0)", opacity: 1 }, "-=0.3")
+        .to(contactLinkedin, .4, { transform: "translateY(0)", opacity: 1 }, "-=0.3")
+        .to(contactGithub, .4, { transform: "translateY(0)", opacity: 1 }, "-=0.3")
+
+
+
 
 
 

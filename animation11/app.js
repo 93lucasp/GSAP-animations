@@ -1692,41 +1692,26 @@
     return w.noConflict = function(t) { return e.$ === w && (e.$ = Kt), t && e.jQuery === w && (e.jQuery = Jt), w }, t || (e.jQuery = e.$ = w), w
 });
 $(document).ready(function() {
+    particlesJS.load('particles-js', 'particles.json', function() {
 
+    });
 
-    var line1 = $(".article1 .line"),
-        title1 = $(".article1 .article-title"),
-        date1 = $(".article1 .article-date"),
-        line2 = $(".article2 .line"),
-        title2 = $(".article2 .article-title"),
-        date2 = $(".article2 .article-date"),
-        line3 = $(".article3 .line"),
-        title3 = $(".article3 .article-title"),
-        line4 = $(".article4 .line"),
-        title4 = $(".article4 .article-title"),
-        line5 = $(".article5 .line"),
-        title5 = $(".article5 .article-title"),
-        line6 = $(".article6 .line"),
-        title6 = $(".article6 .article-title"),
+    var lineTop = $(".line-top"),
+        lineLeft = $(".line-left"),
+        backgroundWhite = $('.background-white'),
+        lineBeforeImg = $(".line-before-image"),
+        img = $(".line-image"),
+        text = $(".text"),
+        lineMask = $(".line-mask"),
+        tl = new TimelineLite();
 
-        tl;
-
-    tl = new TimelineLite();
-
-    tl.to(line1, 0.3, { width: "100%" })
-        .to(title1, 0.2, { transform: "translateY(0)", opacity: 1 }, "together1")
-        .to(date1, 0.2, { transform: "translateY(0)", opacity: 1 }, "together1")
-        .to(line2, 0.3, { width: "100%" })
-        .to(title2, 0.2, { transform: "translateY(0)", opacity: 1 }, "together2")
-        .to(date2, 0.2, { transform: "translateY(0)", opacity: 1 }, "together2")
-        .to(line3, 0.3, { width: "100%" })
-        .to(title3, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line4, 0.3, { width: "100%" })
-        .to(title4, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line5, 0.3, { width: "100%" })
-        .to(title5, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line6, 0.3, { width: "100%" })
-        .to(title6, 0.2, { transform: "translateY(0)", opacity: 1 })
+    tl.to(lineTop, 0.4, { width: "100%", ease: Power2.easeIn })
+        .to(lineLeft, 0.4, { height: "100%", ease: Power0.easeNone })
+        .to(lineBeforeImg, 1, { right: "100%", ease: Power4.easeIn }, "-=0.2")
+        .to(lineMask, 1, { right: "100%", ease: Power4.easeIn }, "-=1")
+        .to(img, 0, { zIndex: 6 })
+        .to(backgroundWhite, 1, { opacity: 1 })
+        .staggerTo(text, 1, { transform: "translateX(0px)", opacity: 1 }, "0.4")
 
 
 
@@ -1736,5 +1721,4 @@ $(document).ready(function() {
 
 
 
-
-});
+})

@@ -1724,28 +1724,32 @@ $(document).ready(function() {
 
     tl.to(project1, 0.3, { opacity: 1, transform: "scale(1)" })
         .to(info1, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
-        .to(project6, 0.3, { opacity: 1, transform: "scale(1)" })
-        .to(info6, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
-        .to(project9, 0.3, { opacity: 1, transform: "scale(1)" })
-        .to(info9, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
-        .to(project11, 0.3, { opacity: 1, transform: "scale(1)" })
-        .to(info11, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
-        .to(project3, 0.3, { opacity: 1, transform: "scale(1)" })
-        .to(info3, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
         .to(project8, 0.3, { opacity: 1, transform: "scale(1)" })
         .to(info8, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
-        .to(project4, 0.3, { opacity: 1, transform: "scale(1)" })
-        .to(info4, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
-        .to(project7, 0.3, { opacity: 1, transform: "scale(1)" })
-        .to(info7, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
-        .to(project2, 0.3, { opacity: 1, transform: "scale(1)" })
-        .to(info2, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
-        .to(project5, 0.3, { opacity: 1, transform: "scale(1)" })
-        .to(info5, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+        .to(project3, 0.3, { opacity: 1, transform: "scale(1)" })
+        .to(info3, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
         .to(project10, 0.3, { opacity: 1, transform: "scale(1)" })
         .to(info10, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+        .to(project5, 0.3, { opacity: 1, transform: "scale(1)" })
+        .to(info5, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
         .to(project12, 0.3, { opacity: 1, transform: "scale(1)" })
         .to(info12, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+        .to(project6, 0.3, { opacity: 1, transform: "scale(1)" })
+        .to(info6, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+        .to(project11, 0.3, { opacity: 1, transform: "scale(1)" })
+        .to(info11, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+        .to(project4, 0.3, { opacity: 1, transform: "scale(1)" })
+        .to(info4, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+        .to(project9, 0.3, { opacity: 1, transform: "scale(1)" })
+        .to(info9, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+        .to(project2, 0.3, { opacity: 1, transform: "scale(1)" })
+        .to(info2, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+        .to(project7, 0.3, { opacity: 1, transform: "scale(1)" })
+        .to(info7, 0.2, { opacity: 1, top: -30, right: -20 }, "-=0.3")
+
+
+
+
 
 
 

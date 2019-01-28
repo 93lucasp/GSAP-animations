@@ -1700,33 +1700,34 @@ $(document).ready(function() {
         line2 = $(".article2 .line"),
         title2 = $(".article2 .article-title"),
         date2 = $(".article2 .article-date"),
-        line3 = $(".article3 .line"),
-        title3 = $(".article3 .article-title"),
-        line4 = $(".article4 .line"),
-        title4 = $(".article4 .article-title"),
-        line5 = $(".article5 .line"),
-        title5 = $(".article5 .article-title"),
-        line6 = $(".article6 .line"),
-        title6 = $(".article6 .article-title"),
-
+        lineTop = $(".line-top"),
+        lineRight = $(".line-right"),
+        lineBottom = $(".line-bottom"),
+        containerBackground = $(".container-background"),
+        containerBackground2 = $(".container-background2"),
         tl;
 
     tl = new TimelineLite();
 
-    tl.to(line1, 0.3, { width: "100%" })
-        .to(title1, 0.2, { transform: "translateY(0)", opacity: 1 }, "together1")
-        .to(date1, 0.2, { transform: "translateY(0)", opacity: 1 }, "together1")
+    tl.to(lineTop, 0.6, { width: "600%" })
+        .to(lineRight, 0.6, { height: "100%" })
+        .to(lineBottom, 0.6, { width: "600%" })
+        .to(containerBackground, 0.6, { width: "600%" }, "-=0.3")
+        .to(line1, 0.3, { width: "100%" })
+        .to(date1, 0.2, { transform: "translateY(0)", opacity: 1 }, "-=0.2")
+        .to(title1, 0.2, { transform: "translateY(0)", opacity: 1 })
         .to(line2, 0.3, { width: "100%" })
-        .to(title2, 0.2, { transform: "translateY(0)", opacity: 1 }, "together2")
-        .to(date2, 0.2, { transform: "translateY(0)", opacity: 1 }, "together2")
-        .to(line3, 0.3, { width: "100%" })
-        .to(title3, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line4, 0.3, { width: "100%" })
-        .to(title4, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line5, 0.3, { width: "100%" })
-        .to(title5, 0.2, { transform: "translateY(0)", opacity: 1 })
-        .to(line6, 0.3, { width: "100%" })
-        .to(title6, 0.2, { transform: "translateY(0)", opacity: 1 })
+        .to(date2, 0.2, { transform: "translateY(0)", opacity: 1 }, "-=0.2")
+        .to(title2, 0.2, { transform: "translateY(0)", opacity: 1 })
+
+    //     .to(line3, 0.3, { width: "100%" })
+    //     .to(title3, 0.2, { transform: "translateY(0)", opacity: 1 })
+    //     .to(line4, 0.3, { width: "100%" })
+    //     .to(title4, 0.2, { transform: "translateY(0)", opacity: 1 })
+    //     .to(line5, 0.3, { width: "100%" })
+    //     .to(title5, 0.2, { transform: "translateY(0)", opacity: 1 })
+    //     .to(line6, 0.3, { width: "100%" })
+    //     .to(title6, 0.2, { transform: "translateY(0)", opacity: 1 })
 
 
 
